@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cake Corner Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff5f8;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff6f91;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h1 {
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?cake,bakery') center/cover no-repeat;
+      text-align: center;
+      padding: 100px 20px;
+      color: rgb(31, 29, 29);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background-color: #0f0f0f;
+      color: #ff6f91;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 32px;
+      color: #ff6f91;
+    }
+
+    .cakes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px 50px;
+    }
+
+    .cake-card {
+      background: rgb(240, 235, 235);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 250px;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .cake-card:hover {
+      transform: scale(1.05);
+    }
+
+    .cake-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .cake-card h3 {
+      margin: 10px 0 5px;
+      color: #d05370;
+    }
+
+    .cake-card p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .cake-card button {
+      background-color: #e28a9e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 0 15px;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .contact {
+      background-color: #ffe4ec;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+      color: #ff6f91;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #ff6f91;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    @media(max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      .cakes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>Cake Corner</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#cakes">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Cake Corner</h2>
+    <p>Delicious cakes made with love and the finest ingredients.
+        Delicious cakes made with love and the finest ingredients
+        Cake Corner has established itself as a beloved bakery chain in Jaipur, offering a delightful array of cakes and desserts across multiple locations. With outlets in Shyam Nagar, Durgapura, Malviya Nagar, Mansarovar, and Vaishali Nagar, it's a go-to destination for many dessert enthusiasts..</p>
+    </p>
+    <button onclick="alert('Redirecting to order page soon!')">Order Now</button>
+  </section>
+
+  <h2 class="section-title" id="cakes">Our Cakes</h2>
+
+  <section class="cakes">
+    <div class="cake-card">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSbBbFkN991MVJdSd7EafehXTSLTX5I00175KPv3NKQ2GUFW9XptuhCytv3ytaV-46pxK-0d3CcrxkwgxBh-BzHtNDNAlS8m3ZXqM7fgDFu" alt="Chocolate Cake" />
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQj0-2kAwVnOP78zxkNPP0xKiXUDSKdlwbd8L4LFHUcnA4QKSgGW59JrZyTInyl4NlQGiV7gLJwKmOmxO_ubWPGfs9cGDk9" alt="chocolate cake"/>
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTFXRm3r0ptBU14nahBXRsjgEiRfpgppHHNmwHHQaaG0ptp6IXNrmXvIPCUaTQIVntbeP4XA1Chcuib_Y5Z7RHZS-wIX4NqVVyGktNlwdlTfs5Qm8wrlgP-" alt="chocolate cake"/>
+      <h3>Chocolate Cake</h3>
+      <p>Rich, moist, and chocolaty</p>
+      <p>₹500</p>
+      <button class="order-btn">Order</button>
+    </div>
+
+    <div class="cake-card">
+      <img src="https://livforcake.com/wp-content/uploads/2017/06/vanilla-cake-6-680x1020.jpg" alt="Vanilla Cake" />
+        <img src="https://cdn.pickuplimes.com/cache/71/5e/715e2c01c4212e55eab2a3024b4dd520.jpg" alt="Vanilla Cake" />
+        <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2016/02/BBB113-Vanilla-Celebration-Cake-FINAL.jpg" alt="Vanilla Cake" />
+      <h3>Vanilla Cake</h3>
+      <p>Classic vanilla flavor with creamy icing</p>
+      <p>₹500</p>
+      <button class="order-btn">Order</button>
+    </div>
+
+    <div class="cake-card">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTuu2YuEdtFXh0b8ssbG0EgtqVaRd-AKUu9fBmclrGBYAioSq2yUKLxXevcuWsRyGpoA4FnALZHdS5eE1jUH903---Zv1NzMCvM0ezEyxUGS1SU-CtdNuXXFA" alt="Red Velvet Cake" />
+        <img src="https://40204166.fs1.hubspotusercontent-na1.net/hubfs/40204166/New%20Recipe%20images/Red%20Velvet%20Cake.jpg" alt="Red Velvet Cake" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSXI-sjwinxHxyTRB2MSPq87b2eYsV85wvww&s" alt="Red Velvet Cake" />
+      <h3>Red Velvet Cake</h3>
+      <p>Classic red velvet flavor with creamy icing</p>
+      <p>₹500</p>
+      <button class="order-btn">Order</button>
+    </div>
+
+    <div class="cake-card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSy_vxwfLxx_RSW6ZzZrq99r-VFtvjBIcIp4H2T5FUl0rYZGeXbOzYD1Li5mFqXLWAjl8zK1QS8psDCrmiVs9vmQMaCC3KFuA" alt="Lemon Cake" />
+        <img src="https://preppykitchen.com/wp-content/uploads/2022/06/Lemon-Cake-Recipe-500x375.jpg" alt="Lemon Cake" />
+        <img src="https://www.modernhoney.com/wp-content/uploads/2024/02/Best-Lemon-Cake-4-crop-scaled.jpg" alt="Lemon Cake" />
+      
+      <h3>Lemon Cake</h3>
+      <p>Refreshing lemon flavor with a zesty glaze</p>
+      <p>₹400</p>
+      <button class="order-btn">Order</button>
+    </div>
+
+    <div class="cake-card">
+    <img src="https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg" alt="cup Cake" />
+        <img src="https://www.cookwithmanali.com/wp-content/uploads/2017/07/Eggless-Chocolate-Cupcakes-500x375.jpg" alt="cup Cake" />
+        <img src="https://www.bakedambrosia.com/wp-content/uploads/2024/01/Vanilla-Cupcakes-with-Oil-28.jpg" alt="cup Cake" />
+      <h3>Cup Cake</h3>
+      <p>Delicious cupcake with creamy frosting</p>
+      <p>₹100</p>
+      <button class="order-btn">Order</button>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Cake Corner Bakery. All rights reserved.
+  </footer>
+
+  <script>
+    // Order button popup
+    const orderButtons = document.querySelectorAll('.order-btn');
+    orderButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Thank you for your order! We will contact you soon.');
+      });
+    });
+
+    // Contact form validation
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if(name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+      } else {
+        alert('Thank you for contacting us, ' + name + '! We will get back to you soon.');
+        contactForm.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
